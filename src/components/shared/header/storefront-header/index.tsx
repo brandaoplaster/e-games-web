@@ -1,16 +1,38 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, InputGroup, FormControl } from "react-bootstrap";
 import style from "@/styles/Header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faShoppingCart, faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import Logo from "@/components/shared/logo";
 
 const StoreFrontHeader: React.FC = () => {
   return (
     <Row className={style.background}>
       <Col md={8} className="mt-2">
-
+        <Logo />
       </Col>
 
       <Col md={4} className="mt-2 text-center">
-
+        <Row >
+          <Col md={6} className="mb-4 mb-md-0">
+            <InputGroup>
+              <FormControl placeholder="Search Product" />
+            </InputGroup>
+          </Col>
+          <Col md={6}>
+            <Row>
+              <Col md={4} xs={4}>
+                <FontAwesomeIcon icon={faSearch} color="var(--color-gray-light)" />
+              </Col>
+              <Col md={4} xs={4}>
+                <FontAwesomeIcon icon={faShoppingCart} color="var(--color-gray-light)" />
+              </Col>
+              <Col md={4} xs={4}>
+                <FontAwesomeIcon icon={faUserCircle} color="var(--color-gray-light)" />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Col>
     </Row>
   )
