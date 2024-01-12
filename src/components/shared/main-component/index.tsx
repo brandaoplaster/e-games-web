@@ -3,7 +3,7 @@ import Header from "@/components/shared/header/storefront-header";
 import Footer from "../footer/storefront";
 
 interface MainComponentProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 const MainComponent: React.FC<MainComponentProps> = ({ children }) => {
