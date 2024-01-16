@@ -1,6 +1,6 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import Cookie from "js-cookie";
-import { ApiData, HeadersDefaults } from "@/dtos/apiData";
+import ApiData from "@/dtos/apiData";
 
 const api = axios.create({
   baseURL: "http://localhost:3000"
