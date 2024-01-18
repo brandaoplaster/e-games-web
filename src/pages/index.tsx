@@ -7,7 +7,7 @@ const Home: React.FC = () => {
 
   return (
     <MainComponent>
-      <button onClick={() => router.push("Auth/login")}>Login</button>
+      <button onClick={() => router.push("auth/login")}>Login</button>
     </MainComponent>
   );
 };
