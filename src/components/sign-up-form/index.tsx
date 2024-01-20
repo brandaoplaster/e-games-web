@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Button, Col, FormControl, InputGroup, Row } from "react-bootstrap";
-import BlueBackground from "../shared/bluebackground";
+import BlueBackground from "@/components/shared/bluebackground";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import AuthState from "@/dtos/authState";
