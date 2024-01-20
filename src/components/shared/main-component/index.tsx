@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Header from "@/components/shared/header/storefront-header";
-import Footer from "../footer/storefront";
+import Footer from "@/components/shared/header/storefront-header";
 
 interface MainComponentProps {
   children?: ReactNode;
