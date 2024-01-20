@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { Col, Row } from "react-bootstrap";
-import AdminHeader from "../header/admin-header";
+import AdminHeader from "@/components/shared/header/admin-header";
+import AdminFooter from "@/components/shared/footer/admin-footer";
 
 interface AdminComponentProps {
   children?: ReactNode;
@@ -14,6 +15,7 @@ const AdminComponent: React.FC<AdminComponentProps> = ({ children }) => {
         <div className="d-flex flex-column sticky-footer-wrapper container">
           <AdminHeader name="Admin User" />
           <div className="flex-fill text-center">{children}</div>
+          <AdminFooter />
         </div>
       </Col>
     </Row>
