@@ -17,3 +17,14 @@
 .table_line:hover {
   color: white !important;
 }
+
+.model {
+  top: 20%;
+}
+
+.model_body {
+  background-color: var(--color-primary);
+  padding: 50px;
+  text-align: center;
+  font-size: 29px;
+}
