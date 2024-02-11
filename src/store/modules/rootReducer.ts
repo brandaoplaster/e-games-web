@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 import auth from "@/store/modules/auth";
+import search from "@/store/modules/admin/shared/search/reducer";
 
 export default combineReducers({
-  auth
+  auth,
+  search
 });
