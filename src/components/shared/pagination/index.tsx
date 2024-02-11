@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { HtmlHTMLAttributes, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import PaginationService from "@/libs/paginationservice";
 import StyleButton from "@/components/shared/style-button";
 import Meta from "@/dtos/meta";
 
+type PaginationProps = HtmlHTMLAttributes<HTMLDivElement> & {
+  page: number;
+  total_pages: number;
+}
+
 const Pagination: React.FunctionComponent<Meta> = ({
   page,
-  length,
-  total,
   total_pages,
-}) => {
+  ...rest
+}: PaginationProps) => {
   const [Pagination, setPagination] = useState(["1"]);
   const router = useRouter();
 
@@ -34,17 +38,17 @@ const Pagination: React.FunctionComponent<Meta> = ({
   }
 
   return (
-    <div className="pagination justify-content-end">
+    <div className="pagination justify-content-end" {...rest}>
       <div className="pagination">
-        <StyleButton 
+        <StyleButton
           action="<"
           type_button="blue"
           onClick={handlePreviusPageClick}
         />
         {
-          Pagination.map((item, index) =>(
+          Pagination.map((item, index) => (
             item === "..." ? "..." : (
-              <StyleButton 
+              <StyleButton
                 key={index}
                 action={item}
                 type_button="blue"
@@ -55,7 +59,7 @@ const Pagination: React.FunctionComponent<Meta> = ({
           ))
         }
 
-        <StyleButton 
+        <StyleButton
           action=">"
           type_button="blue"
           onClick={handleNextPageClick}
