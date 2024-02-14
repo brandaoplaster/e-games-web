@@ -9,12 +9,14 @@ interface AdminSubHeaderProps {
   title?: string;
   path?: string;
   icon?: IconProp;
+  newPath?: string;
 }
 
 const AdminSubHeader: React.FC<AdminSubHeaderProps> = ({
   title,
   path,
   icon,
+  newPath
 }) => {
   return (
     <Row>
