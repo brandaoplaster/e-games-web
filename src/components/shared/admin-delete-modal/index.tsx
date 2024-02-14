@@ -6,8 +6,8 @@ import { faTimes, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 interface AdminDeleteModalProps {
   show: boolean;
-  handleClose: (success?: boolean) => void;
-  target: string;
+  handleClose: (success: boolean) => void;
+  target: String;
 }
 
 const AdminDeleteModal: React.FC<AdminDeleteModalProps> = ({
@@ -18,7 +18,7 @@ const AdminDeleteModal: React.FC<AdminDeleteModalProps> = ({
   return (
     <Modal
       show={show}
-      onHide={handleClose}
+      onHide={() => handleClose}
       className={styles.modal}
       animation={true}
     >
