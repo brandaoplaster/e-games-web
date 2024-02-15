@@ -3,15 +3,15 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import Category from "@/dtos/category";
 
 const categorySlice = createSlice({
-  name: 'category',
+  name: "category",
   initialState: null,
   reducers: {
-    setCategoryToEdit(state: Category, action: PayloadAction<Category>) {
-      return state = action.payload;
+    setCategoryToEdit(state: null | Category, action: PayloadAction<Category>): void {
+      state = action.payload;
     },
-    clearCategoryToEdit(state: Category) {
+    clearCategoryToEdit(state: null | Category) {
       return state = null;
-    },
+    }
   }
 })
 
