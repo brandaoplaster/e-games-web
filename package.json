@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -22,9 +22,10 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^18",
     "react-redux": "^9.0.4",
+    "react-toastify": "^6.2.0",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
-    "react-toastify": "^6.2.0"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.6",
