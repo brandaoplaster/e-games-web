@@ -5,8 +5,10 @@
   margin-top: 20px;
 }
 
-.admin_panel {
+.admin_panel table {
   color: white;
+  border-collapse: separate;
+  border-spacing: 0 1em;
 }
 
 .table_line {
@@ -27,4 +29,31 @@
   padding: 50px;
   text-align: center;
   font-size: 29px;
+}
+
+.details_button {
+  text-align: right;
+}
+
+.details_button > button {
+  margin: 10px;
+}
+
+.new_form {
+  text-align: left;
+  padding: 20px;
+}
+
+.secondary_input, .secondary_input:focus {
+  background-color: var(--color-background);
+  color: white;
+  border: none;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.hover :hover{
+  color: #0056b3;
 }
