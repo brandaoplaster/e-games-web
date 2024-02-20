@@ -7,7 +7,7 @@ interface SystemRequirementsIndexData {
   meta: Meta;
 }
 
-const SystemRequirements = {
+const SystemRequirementsService = {
   index: (url: string) => {
     return api
       .get<SystemRequirementsIndexData>(url)
@@ -15,4 +15,4 @@ const SystemRequirements = {
   },
 };
 
-export default SystemRequirements;
+export default SystemRequirementsService;
