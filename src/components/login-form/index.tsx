@@ -60,8 +60,8 @@ const LoginForm: React.FC<LoginProps> = ({ titlePhrase, buttonPhrase }) => {
   return (
     <form onSubmit={handleSubmit}>
       <Row>
-        <BlueBackground>
-          <Col lg={{ span: 6, offset: 3 }} md={{ span: 8, offset: 2 }}>
+        <Col lg={{ span: 6, offset: 3 }} md={{ span: 8, offset: 2 }}>
+          <BlueBackground>
             <h4>{titlePhrase}</h4>
             <InputGroup className="mt-3">
               <FormControl
@@ -91,10 +91,10 @@ const LoginForm: React.FC<LoginProps> = ({ titlePhrase, buttonPhrase }) => {
             </Button>
             <hr />
             <Link href="/auth/passwordrecovery">I forgot my password</Link>
-          </Col>
         </BlueBackground>
-      </Row>
-    </form>
+      </Col>
+    </Row>
+    </form >
   );
 };
 
