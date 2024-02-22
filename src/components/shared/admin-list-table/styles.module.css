@@ -20,10 +20,25 @@
   color: white !important;
 }
 
-.hover {
-  cursor: pointer;
+.admin_panel table thead tr th {
+  text-align: left;
 }
 
-.hover :hover {
-  color: #0056b3;
+.admin_panel table thead tr th:last-of-type {
+  text-align: center;
+}
+
+.admin_panel table thead tr {
+  background-color: var(--color-background);
+  padding-right: 110px;
+}
+
+.admin_panel table thead tr:hover {
+  color: white !important;
+}
+
+.admin_panel table thead tr div:hover {
+  cursor: pointer;
+  color: #00cfff;
+  transition: color 0.3s;
 }

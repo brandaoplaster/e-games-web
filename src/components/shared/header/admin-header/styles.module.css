@@ -10,3 +10,9 @@
   font-size: 0.9rem;
   margin-right: 10px;
 }
+
+.background svg:hover {
+  cursor: pointer;
+  color: #00cfff;
+  transition: color 0.3s;
+}
