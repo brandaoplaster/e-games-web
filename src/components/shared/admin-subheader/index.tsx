@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import SearchIcon from "@/components/shared/admin-subheader/search-icon";
 import TitlePath from "@/components/shared/admin-subheader/title-path";
-import styles from "@/styles/SubHeader.module.css";
+import styles from "./styles.module.css";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface AdminSubHeaderProps {

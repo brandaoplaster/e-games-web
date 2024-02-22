@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/SubHeader.module.css";
+import styles from "./styles.module.css";
 
 interface TitlePathProps {
   title?: string;

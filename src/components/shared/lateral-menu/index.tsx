@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/LateralMenu.module.css";
+import styles from "./styles.module.css";
 import Logo from "@/components/shared/logo";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
