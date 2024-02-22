@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "@/styles/BlueBackground.module.css";
+import styles from "./styles.module.css";
 
 interface BlueBackgroundProps {
   children?: ReactNode;

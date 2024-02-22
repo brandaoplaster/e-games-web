@@ -1,13 +1,13 @@
 import React from "react";
 import { Row, Col, InputGroup, FormControl } from "react-bootstrap";
-import style from "@/styles/Header.module.css";
+import styles from "./styles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faShoppingCart, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/components/shared/logo";
 
 const StoreFrontHeader: React.FC = () => {
   return (
-    <Row className={style.background}>
+    <Row className={styles.background}>
       <Col md={8} className="mt-2">
         <Logo />
       </Col>
