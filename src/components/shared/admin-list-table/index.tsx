@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "@/styles/AdminListTable.module.css";
+import styles from "./styles.module.css";
 import { Table } from "react-bootstrap";
 import Meta from "@/dtos/meta";
 import Pagination from "@/components/shared/pagination";

@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react';
-import styles from "@/styles/StyleButton.module.css";
+import styles from "./styles.module.css";
 import { Button } from "react-bootstrap";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

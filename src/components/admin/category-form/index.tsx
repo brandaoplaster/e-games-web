@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Category from "@/dtos/category"
 import { clearCategoryToEdit } from "@/store/modules/admin/category/reducer";
 import { faGhost, faTimes } from "@fortawesome/free-solid-svg-icons";
-import styles from "@/styles/AdminListTable.module.css";
+import styles from "./styles.module.css";
 import StyleButton from "@/components/shared/style-button";
 
 interface CategoryFormProps {

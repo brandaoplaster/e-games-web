@@ -1,7 +1,7 @@
 import { SetStateAction, useEffect, useRef, useState } from "react";
 import { Col } from "react-bootstrap";
 import { Dispatch } from "redux";
-import styles from "@/styles/ProductForm.module.css";
+import styles from "./styles.module.css";
 import StyleButton from "@/components/shared/style-button";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";

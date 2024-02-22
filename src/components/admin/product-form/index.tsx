@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import useSWR from "swr";
-import styles from "@/styles/AdminListTable.module.css";
+import styles from "./styles.module.css";
 import { Col, Form, Row } from "react-bootstrap";
 import ProductImage from "./product-image";
 import StyleButton from "@/components/shared/style-button";
