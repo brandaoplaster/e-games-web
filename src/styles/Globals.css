@@ -7,6 +7,8 @@
   --color-gray-light: #7da1bc;
   --color-blue-light: #00cfff;
   --color-white: #ffffff;
+  --color-hover: #055bd0;
+  --color-active: #71efff;
 }
 
 html,
@@ -27,8 +29,28 @@ body,
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-hover);
+}
+
+a:hover svg {
+  color: var(--color-hover);
+  transition: color 0.3s;
 }
 
 * {
   box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.7);
+  transition: filter 0.3s;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
