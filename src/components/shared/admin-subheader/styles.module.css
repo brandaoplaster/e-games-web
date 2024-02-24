@@ -6,3 +6,7 @@
 .title_and_path span {
   display: inline;
 }
+
+.title {
+  margin-left: 10px;
+}
