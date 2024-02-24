@@ -7,9 +7,9 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface AdminSubHeaderProps {
   title?: string;
-  path?: string;
+  path: string;
   icon?: IconProp;
-  newPath?: string;
+  newPath: string;
 }
 
 const AdminSubHeader: React.FC<AdminSubHeaderProps> = ({
@@ -26,8 +26,8 @@ const AdminSubHeader: React.FC<AdminSubHeaderProps> = ({
             <TitlePath title={title} path={path} />
           </Col>
 
-          <Col lg={{ span: 4, offset: 2 }} xs={8}>
-            <SearchIcon icon={icon} />
+          <Col lg={6} xs={8}>
+            <SearchIcon icon={icon} newPath={newPath} />
           </Col>
         </>
        : 
