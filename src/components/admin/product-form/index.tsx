@@ -26,6 +26,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
   const [id, setId] = useState(0);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [featured, setFeatured] = useState("false");
   const [categories, setCategories] = useState<number[]>([]);
   const [price, setPrice] = useState(0);
   const [status, setStatus] = useState("available");
@@ -66,6 +67,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
       setPrice(product.price);
       setStatus(product.status);
       setProductImage(product?.image_url);
+      setFeatured(product.featured);
 
       setCategories(product.categories.map((category) => category.id));
       setSystemRequirement(product?.system_requirements?.id ?? 1);
@@ -84,6 +86,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
     formData.append("product[mode]", mode);
     formData.append("product[developer]", developer);
     formData.append("product[release_date]", releaseDate);
+    formData.append("product[featured]", featured);
     formData.append(
       "product[system_requirement_id]",
       systemRequirement.toString()
@@ -195,6 +198,21 @@ const ProductForm: React.FC<ProductFormProps> = ({
                   <option value="pve">PVE</option>
                   <option value="pvp">PVP</option>
                   <option value="both">Both</option>
+                </Form.Control>
+              </Form.Group>
+
+              <Form.Group as={Col} md={6} sm={12} className="p-2">
+                <Form.Label>Featured</Form.Label>
+                <Form.Control
+                  as="select"
+                  className={styles.secundary_input}
+                  value={featured}
+                  onChange={(evt: React.ChangeEvent<HTMLSelectElement>) =>
+                    setFeatured(evt.target.value)
+                  }
+                >
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
                 </Form.Control>
               </Form.Group>
 
