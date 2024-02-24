@@ -9,7 +9,7 @@ interface TitlePathProps {
 const TitlePath: React.FC<TitlePathProps> = ({ title, path }) => {
   return (
     <>
-      <h4>{title}</h4>
+      <h4 className={styles.title}>{title}</h4>
       <span className={styles.style_path}>{path}</span>
     </>
   );
