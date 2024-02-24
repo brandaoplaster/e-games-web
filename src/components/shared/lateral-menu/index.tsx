@@ -13,6 +13,7 @@ import {
   faTicketAlt,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import SignOutService from "@/libs/signOutService";
 
 const LateralMenu: React.FC = () => {
   return (
@@ -90,7 +91,7 @@ const LateralMenu: React.FC = () => {
           <hr />
         </Link>
 
-        <Link href="/admin/#">
+        <Link href="/auth/login" onClick={SignOutService.execute}>
           <FontAwesomeIcon
             icon={faSignOutAlt}
             color="var(--color-gray-light)"

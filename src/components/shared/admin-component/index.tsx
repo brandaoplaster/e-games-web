@@ -16,7 +16,7 @@ const AdminComponent: React.FC<AdminComponentProps> = ({ children }) => {
       </Col>
       <Col lg={9}>
         <div className="d-flex flex-column sticky-footer-wrapper container">
-          <AdminHeader name="Admin User" />
+          <AdminHeader />
           <div className="flex-fill text-center">{children}</div>
           <AdminFooter />
         </div>
