@@ -14,8 +14,11 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import SignOutService from "@/libs/signOutService";
+import { useRouter } from "next/router";
 
 const LateralMenu: React.FC = () => {
+  const router = useRouter();
+
   return (
     <div className={styles.background}>
       <Logo />
@@ -25,7 +28,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faSignal}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin" ? styles.active : ""
+            }`}
           />
           Home
           <hr />
@@ -35,7 +40,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faUser}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/users/list" ? styles.active : ""
+            }`}
           />
           Users
           <hr />
@@ -45,7 +52,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faGamepad}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/products/list" ? styles.active : ""
+            }`}
           />
           Products
           <hr />
@@ -55,7 +64,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faCheckSquare}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/categories/list" ? styles.active : ""
+            }`}
           />
           Categories
           <hr />
@@ -65,7 +76,11 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faLaptop}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/systemrequirements/list"
+                ? styles.active
+                : ""
+            }`}
           />
           System Requirements
           <hr />
@@ -75,7 +90,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faTicketAlt}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/coupons/list" ? styles.active : ""
+            }`}
           />
           Coupons
           <hr />
@@ -85,7 +102,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faDollarSign}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/admin/#" ? styles.active : ""
+            }`}
           />
           Financial
           <hr />
@@ -95,7 +114,9 @@ const LateralMenu: React.FC = () => {
           <FontAwesomeIcon
             icon={faSignOutAlt}
             color="var(--color-gray-light)"
-            className="mr-3"
+            className={`mr-3 ${
+              router.pathname === "/auth/login" ? styles.active : ""
+            }`}
           />
           Exit
           <hr />
